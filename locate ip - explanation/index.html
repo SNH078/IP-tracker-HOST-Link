@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- UTF (8 bit) : Unicode Transformation Format -->
+    <!-- charset :specifies the character encoding for the HTML document-->
+   <!-- unicode : each letter, digit, or symbol is assigned a unique numeric value -->
+    <!-- UTF-8 is an encoding system for Unicode. It can translate any Unicode character to a matching unique binary string, and can also translate the binary string back to a Unicode character -->
+    <!-- UTF-8 is a widely used encoding ,supports characters from different languages, special symbol,emojis--> 
+  <!--prevents character encoding issues. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- making your website responsive, ensuring it displays correctly on different devices.  -->
+
+    <title>IP Address Location Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>IP Address Location Tracker</h1>
+    <div class="container">
+        <div class="input-container">       
+            <input type="text" id="ipAddressInput" placeholder="Enter IP address" autofocus>
+            <div class="blink-text error-message" id="error-message" >This text will blink!</div>
+            <button onclick="updateIP()">Update IP</button>
+        </div>
+        <div id="map"></div>
+
+        <div id="locationDetails" class="location-details">
+            <h2>Location Details</h2>
+
+            <p><strong> Coordinates(Approx.):</strong> <span id="coordinates">N/A</span></p>
+            <p><strong>City:</strong> <span id="city">N/A</span></p>
+            <p><strong>Country:</strong> <span id="country">N/A</span></p>
+            <!-- strong> has a semantic meaning, indicating that the enclosed text is important, 
+             while <b> is used for visual styling without any semantic implication...aid screen readers -->
+       <!--<span> : mark up a part of a text, or a part of a document. -->
+            </div>
+    </div>
+    <footer >
+        <h3 style="text-align:center">Made in India </h3>
+        <h4> © Copyright MANIT@2024 </h4>
+    </footer>
+   
+    <script src="script.js" type="module"></script>
+    <!-- script should be treated as an ECMAScript module. This means the script can import and export other modules in JavaScript. -->
+</body>
+</html>
