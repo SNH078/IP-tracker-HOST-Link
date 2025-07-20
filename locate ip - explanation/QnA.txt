@@ -64,6 +64,8 @@ Make it mobile-friendly and visually better
 ❇️What additional features could you add to this project?
 
 Answer: "I could add features like user history tracking, location-based recommendations, or integrating other APIs to provide weather updates or local news based on the user's location."
+Auto-detection of a device's IP address using API  ...cannot be done using pure frontend JavaScript alone due to browser security restrictions.
+(do front + backend) ....
 
 
 ❇️Can you explain how IP Geolocation works under the hood?
